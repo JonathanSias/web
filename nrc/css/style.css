@@ -1,0 +1,93 @@
+/*-------------------------------------------------------------------------->
+<!-- Achou que era um código fodão e inovador aqui ?! ACHOU ERRADO OTÁRIO -->
+<!-------------------------------------------------------------------------*/
+#header{
+    background-color: #f1f1f1;
+}
+
+.sidenav i{
+    margin-right: 15px;
+}
+
+.description{
+    text-align: justify;
+    margin: 0 5% 0 0;
+}
+
+#footer{
+    text-align: center;
+    background-color: #009688;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer p{
+    margin: 0;
+    padding: 1.5%;
+    color: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Side Navbar */
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 5% 0 0 0;
+    width: 20%;
+    background-color: #009688;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 130%;
+}
+
+ul.sidenav li a.active {
+    background-color: #FFEB3B;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #00796B;
+    /*background-color: #00796B;*/
+    color: white;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+    color: #212121;
+}
+
+@media screen and (max-width: 900px) {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}
