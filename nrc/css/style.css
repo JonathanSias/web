@@ -2,11 +2,9 @@
 <!-- Achou que era um código fodão e inovador aqui ?! ACHOU ERRADO OTÁRIO -->
 <!-------------------------------------------------------------------------*/
 #header{
-    background-color: #f1f1f1;
-}
-
-.sidenav i{
-    margin-right: 15px;
+    background-color: #FFEB3B;
+    font-family: 'Titillium Web', sans-serif;
+    /*padding: 0.3%;*/
 }
 
 .description{
@@ -16,6 +14,7 @@
 
 #footer{
     text-align: center;
+    /*background-color: #FFEB3B;*/
     background-color: #009688;
     left: 0;
     bottom: 0;
@@ -25,6 +24,11 @@
 #footer p{
     margin: 0;
     padding: 1.5%;
+    color: #FFFFFF;
+    /*color: #212121;*/
+}
+
+#footer small{
     color: #FFFFFF;
 }
 
@@ -43,6 +47,10 @@ ul.sidenav {
     position: fixed;
     height: 100%;
     overflow: auto;
+}
+
+.sidenav i{
+    margin-right: 15px;
 }
 
 ul.sidenav li a {
