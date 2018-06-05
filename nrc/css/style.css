@@ -1,11 +1,20 @@
 /*-------------------------------------------------------------------------->
 <!-- Achou que era um código fodão e inovador aqui ?! ACHOU ERRADO OTÁRIO -->
 <!-------------------------------------------------------------------------*/
-#header{
+@font-face {
+    font-family: "hello";
+    src:url("../fonts/MR ROBOT.ttf");
+}
+
+@font-face {
+    font-family: "pixel";
+    src: url("../fonts/Pixeled.ttf");
+}
+
+/*#header{
     background-color: #FFEB3B;
     font-family: 'Titillium Web', sans-serif;
-    /*padding: 0.3%;*/
-}
+}*/
 
 .description{
     text-align: justify;
@@ -37,11 +46,36 @@ body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+div.main{
+    margin-left: 25%;
+    padding: 30px 16px;
+    height: auto;
+    color: #212121;
+    background-color: #FFFFFF;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 30px 16px;
+    height: auto;
+    color: #212121;
+}
+
 /* Side Navbar */
+#hello {
+    text-align: center;
+}
+
+#hello a{
+    font-family: "hello";
+    color: white;
+    font-size: 30px;
+}
+
 ul.sidenav {
     list-style-type: none;
     margin: 0;
-    padding: 5% 0 0 0;
+    padding: 0;
     width: 20%;
     background-color: #009688;
     position: fixed;
@@ -63,7 +97,7 @@ ul.sidenav li a {
 }
 
 ul.sidenav li a.active {
-    background-color: #FFEB3B;
+    background-color: #00796B;
     color: white;
 }
 
@@ -71,13 +105,6 @@ ul.sidenav li a:hover:not(.active) {
     background-color: #00796B;
     /*background-color: #00796B;*/
     color: white;
-}
-
-div.content {
-    margin-left: 25%;
-    padding: 1px 16px;
-    height: 1000px;
-    color: #212121;
 }
 
 @media screen and (max-width: 900px) {
@@ -88,7 +115,6 @@ div.content {
     }
     ul.sidenav li a {
         float: left;
-        padding: 15px;
     }
     div.content {margin-left: 0;}
 }
@@ -99,3 +125,26 @@ div.content {
         float: none;
     }
 }
+
+/* Home Card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60%;
+    margin-left: 15%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.container p{
+    font-family: "pixel";
+    font-size: 8px;
+    text-align: right;
+}
+/********/
